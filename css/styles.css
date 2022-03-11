@@ -1,0 +1,108 @@
+:root{
+    --blanco: #ffffff;
+    --negro: #000000;
+    --verde: #6AF211;
+    --verderClaro: #74FF00;
+    --grisOscuro: #0C0B0B;
+    --grisClaro: #212121;
+
+    --fuenteTitulos: 'Shippori Antique B1', sans-serif;
+    --fuenteVaria: 'League Spartan', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+      background-color: var(--negro);
+      font-size: 2rem;
+      line-height: 1.5;
+  }
+  p{
+    font-size: 2rem;
+    font-family: var(--fuenteVaria);
+    color: var(--blanco);
+  }
+  
+  img{
+      width: 3%;
+  }
+  h1,h2,h3{
+      text-align: center;
+      font-family: var(--fuenteTitulos);
+      color: var(--blanco);
+      font-size: 2.5rem;
+  }
+  .navegacion{
+      background-color: var(--grisOscuro);
+      display: flex;
+      justify-content: space-evenly
+  }
+  .navegacion a{
+    color: var(--blanco);
+    font-family: var(--fuenteVaria);
+    font-size: 2rem;
+    padding: 1rem;
+  text-decoration: none;
+  
+  }
+  .navegacion a:hover{
+      background-color: var(--verde);
+      color: var(--grisClaro);
+  }
+  .footer{
+      text-align: center;
+      font-family: var(--fuenteVaria);
+      background-color: var(--grisOscuro);
+  }
+  /*div{
+      color: var(--blanco);
+      font-family: var(--fuenteTitulos);
+      text-align: center;
+  }*/
+  .sombra{
+    padding: 2rem;
+    margin-bottom: 3rem;
+    background-color: var(--grisClaro);
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0.63);
+    box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+}
+.imagen{
+    width: 85%;
+}
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    
+}
+
+.logos{
+    background-color: white;
+width: 18%;
+margin-left: 18rem;
+}
+.recuadro{
+    
+    background-color: var(--grisOscuro);
+    color: var(--blanco);
+    margin-top: .5rem;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    
+}
+.ventajas{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    
+}
